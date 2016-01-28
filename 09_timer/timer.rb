@@ -45,5 +45,5 @@ class Timer
 end
 
 timer = Timer.new
-timer.seconds = 0
+timer.seconds = 500
 puts timer.time_string

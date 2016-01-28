@@ -1,24 +1,20 @@
 
-def reverser sentence
-  sentence_array = sentence.split
+def reverser
+  original = yield.split
   new_sentence = []
-
-  sentence_array.each do |word|
-    new_sentence << word.reverse
-  end
-
+  original.each { |word| new_sentence << word.reverse }
   new_sentence.join(" ")
 end
 
-def adder
+#puts reverser {"Poetkoe on paras"}
 
 
+def adder (num=1)
+  added = yield + num
 end
 
 
-
-def repeater
+def repeater (num=1)
+  num.times {yield}
 
 end
-
-puts reverser "antti on paras kaikista :DD"
